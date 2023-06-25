@@ -1,0 +1,48 @@
+{
+  "SUBJECT": ["tao", "tôi", "mình", "tớ", "em", "t", "e"],
+  "SUBJECT_THIRD_PARTY": ["ai", "bạn nào", "người nào", "mọi người", "mn"],
+  "SUICIDE": [
+    "treo cổ", "nhảy cầu", "nhảy lầu", "uống xyanua", "uống thuốc ngủ liều lớn", "uống thuốc độc",
+    "uống thuốc chuột", "cắt tay", "cứa tay", "rạch tay", "uống thuốc diệt cỏ", "cắt cổ tay",
+    "cắn lưỡi", "rạch cổ tay", "uống thuốc trừ sâu", "uống nhiều thuốc ngủ"
+  ],
+  "DIE": [
+    "chết", "ra đi", "hẹo", "nghẻo", "tạch", "thăng", "đi", "giải thoát"
+  ],
+  "TU_TU": ["chết", "ra đi", "tự tử", "tự sát", "tự kết liễu mình"],
+  "MEDICINE": [
+    "xyanua", "thuốc độc", "thuốc ngủ", "thuốc chuột", "thuốc diệt cỏ"
+  ],
+  "OFFENSE_WOMEN": ["phò", "đĩ", "điếm", "gái rẻ tiền", "gái điếm", "gái gọi", "diễn viên jav", "cave", "kĩ nữ"],
+  "OFFENSE_ADJ_WOMEN": ["ngon", "múp", "tươi", "nuột", "to", "trắng"],
+  "OFFENSE_BODY": ["mông", "ngực", "vú", "cặp vú", "cặp đít", "cặp mông", "mông má", "cặp loa", "tâm hồn"],
+  "OFFENSE_JAV": ["phim jav", "phim con heo", "phim heo", "phim 18+", "phim sex", "phim khiêu dâm"],
+  "OFFENSE_CLOTHES": ["quần lót", "đồ lót", "áo ngực", "bra"],
+  "OFFENSE_VERB": ["dạng háng", "dạng chân", "đụ", "địt", "đi khách"],
+  "OFFENSE_V": ["nắng cực", "nứng cặc", "nứng", "nứng loz"],
+  "TOXIC_BODY_PENIS": ["cặc", "kặc", "cặk", "ku", "cu", "cac", "đb", "đầu buoi", "đầu buồi", "buồi"],
+
+  "TOXIC_WORDS_COMMON": ["vcl", "vl", "vãi lon", "vãi lồn", "vãi luyện", "vãi lúa", "vãi cả lồn", "vãi cả lon",
+  "cl", "cái lol", "cái lồn", "cc", "clg", "cái l gì", "con cak", "con căk", "con cặc", "xl", "xàm l",
+  "xàm lồn", "xàm lol", "cái đéo gì", "cái đ gì", "cđg", "vcđ", "vcd", "vãi cả đái", "vlol", "cmn", "con mẹ nó",
+  "mẹ nó", "mẹ cha mày"],
+  "TOXIC_WORDS_VIGINA": ["lồn", "lon", "lolz", "lol", "loz", "cl", "cái loz", "cái lol", "cái lồn"],
+  "TOXIC_WORDS_NO": ["đéo", "éo", "đ"],
+  "TOXIC_WORD_ĐM": ["đm", "địt mẹ", "đuma", "duma", "ditme", "đmm", "đcm", "địt con mẹ", "địt mẹ m", "đụ má m",
+  "đụ mé", "đumeo", "đme", "đmm", "đume", "địt mẹ mày"],
+  "TOXIC_WORD_THIRD_PARTY": ["súc vật", "suc vat", "chó", "hạ đẳng", "hạ đẳng súc vật"],
+  "TOXIC_VERB_TALK": ["câm mẹ mồm","im mẹ mồm", "câm cái mồm mày", "ngậm mẹ mồm", "nói cđg", "câm mm", "ngậm mẹ mõm",
+  "mõm chó", "sủa"],
+  "TOXIC_ATTACK_STUPID": ["ngu", "đần", "óc chó", "óc bò", "óc lợn", "ngu dốt", "dốt", "vô học",
+  "đần độn"],
+
+  "SUBJECT_THIRD_PARTY_COMMON": ["ông", "mày", "m", "bà", "em", "chị", "anh", "mụ", "má", "ba",
+  "bạn", "anh em", "ae"],
+  "TOXIC_ADJ": ["tởm", "ghê tởm", "tởm lợm", "kinh tởm", "dơ"],
+
+  "TOXIC_GENDER_LGBT": ["bê đê", "3D", "đồng tính", "con bóng", "bóng", "nam không ra nam nữ không ra nữ",
+  "ái", "pónk", "gay", "bóng chúa", "pónk chúa", "póng", "gay lọ", "bd", "bede", "bê đê bóng chó",
+  "gay lọ bóng chó"]
+
+
+}
