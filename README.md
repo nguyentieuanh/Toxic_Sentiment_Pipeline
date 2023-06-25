@@ -25,6 +25,7 @@ python concat_file.py
 ## Fine-tune phoBERT for binary classification task toxic - non-toxic 
 ### Experiments
 Training with lr=3e-5, batch_size=64, epoch=10, fold=5
+
 Accuracy: 0.85
 |Clean  | Toxic |
 | :---: | :---: |
