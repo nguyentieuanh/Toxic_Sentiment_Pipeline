@@ -12,7 +12,7 @@ def load_sentiment_pipeline():
 def toxic_prediction(input_text):
     pipeline = load_sentiment_pipeline()
     dp = pipeline.analyze(input_text)
-    return f'The sentence is {dp.sentiment}'
+    return f'Sắc thái của câu: {dp.sentiment}'
 
 
 def main():

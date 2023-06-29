@@ -6,20 +6,13 @@ import numpy as np
 
 class Mapper(PostProcessComponent):
     def serve(self, dp: DataPoint):
-        # result = dp.result.detach().numpy()
-        # number = np.argmax(result, axis=1)[0]
-        # mapper = {
-        #     0: "Clean",
-        #     1: "Xúc phạm, lăng mạ",
-        #     2: "Tự tử",
-        #     3: "Quấy rối"
-        # }
-        # dp.sentiment = mapper[number]
-        # return dp
         result = dp.result
         mapper = {
             0: "Clean",
-            1: "Toxic"
+            1: "Chế nhạo, lăng mạ, công kích",
+            2: "Tự hại, tự tử",
+            3: "Quấy rối tình dục",
+            4: "Lăng mạ giới tính"
         }
         dp.sentiment = mapper[int(result)]
         return dp

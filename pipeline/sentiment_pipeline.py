@@ -31,7 +31,7 @@ class SentimentPipeline(BasePipeline):
         if d_sentiment is None:
             d_sentiment = SentimentAnalysis()
 
-        # components.append(d_sentiment)
+        components.append(d_sentiment)
 
         if post_component is None:
             post_component = Mapper()

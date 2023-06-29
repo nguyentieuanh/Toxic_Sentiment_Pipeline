@@ -14,13 +14,14 @@
     "xyanua", "thuốc độc", "thuốc ngủ", "thuốc chuột", "thuốc diệt cỏ"
   ],
   "OFFENSE_WOMEN": ["phò", "đĩ", "điếm", "gái rẻ tiền", "gái điếm", "gái gọi", "diễn viên jav", "cave", "kĩ nữ"],
-  "OFFENSE_ADJ_WOMEN": ["ngon", "múp", "tươi", "nuột", "to", "trắng"],
+  "OFFENSE_ADJ_WOMEN": ["ngon", "múp", "tươi", "nuột", "to", "trắng", "muốn húp"],
   "OFFENSE_BODY": ["mông", "ngực", "vú", "cặp vú", "cặp đít", "cặp mông", "mông má", "cặp loa", "tâm hồn"],
-  "OFFENSE_JAV": ["phim jav", "phim con heo", "phim heo", "phim 18+", "phim sex", "phim khiêu dâm"],
-  "OFFENSE_CLOTHES": ["quần lót", "đồ lót", "áo ngực", "bra"],
+  "OFFENSE_JAV": ["phim jav", "phim con heo", "phim heo", "phim 18+", "phim sex", "phim khiêu dâm", "phim xxx"],
+  "OFFENSE_CLOTHES": ["quần lót", "đồ lót", "áo ngực", "bra", "quần nhỏ", "quần con", "nội y"],
   "OFFENSE_VERB": ["dạng háng", "dạng chân", "đụ", "địt", "đi khách"],
-  "OFFENSE_V": ["nắng cực", "nứng cặc", "nứng", "nứng loz"],
+  "OFFENSE_V": ["nắng cực", "nứng cặc", "nứng", "nứng loz", "nứkg"],
   "TOXIC_BODY_PENIS": ["cặc", "kặc", "cặk", "ku", "cu", "cac", "đb", "đầu buoi", "đầu buồi", "buồi"],
+  "TOXIC_ATTACK_WOMEN": ["hiếp", "hiếp dâm", "quấy rối", "tấn công tình dục", "hấp diêm"],
 
   "TOXIC_WORDS_COMMON": ["vcl", "vl", "vãi lon", "vãi lồn", "vãi luyện", "vãi lúa", "vãi cả lồn", "vãi cả lon",
   "cl", "cái lol", "cái lồn", "cc", "clg", "cái l gì", "con cak", "con căk", "con cặc", "xl", "xàm l",
@@ -34,15 +35,15 @@
   "TOXIC_VERB_TALK": ["câm mẹ mồm","im mẹ mồm", "câm cái mồm mày", "ngậm mẹ mồm", "nói cđg", "câm mm", "ngậm mẹ mõm",
   "mõm chó", "sủa"],
   "TOXIC_ATTACK_STUPID": ["ngu", "đần", "óc chó", "óc bò", "óc lợn", "ngu dốt", "dốt", "vô học",
-  "đần độn"],
+  "đần độn", "não bị úng nước", "não bị nhúng nước", "thiểu năng"],
 
   "SUBJECT_THIRD_PARTY_COMMON": ["ông", "mày", "m", "bà", "em", "chị", "anh", "mụ", "má", "ba",
-  "bạn", "anh em", "ae"],
-  "TOXIC_ADJ": ["tởm", "ghê tởm", "tởm lợm", "kinh tởm", "dơ"],
+  "bạn", "anh em", "ae", "thím"],
+  "TOXIC_ADJ": ["tởm", "ghê tởm", "tởm lợm", "kinh tởm", "dơ", "ghê"],
 
   "TOXIC_GENDER_LGBT": ["bê đê", "3D", "đồng tính", "con bóng", "bóng", "nam không ra nam nữ không ra nữ",
   "ái", "pónk", "gay", "bóng chúa", "pónk chúa", "póng", "gay lọ", "bd", "bede", "bê đê bóng chó",
-  "gay lọ bóng chó"]
+  "gay lọ bóng chó", "bóng gió", "hai phai", "ô môi", "chuyển giới"]
 
 
 }

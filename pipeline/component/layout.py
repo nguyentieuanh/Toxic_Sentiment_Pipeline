@@ -9,16 +9,13 @@ class SentimentAnalysis(PipelineComponent):
     def serve(self, dp: DataPoint):
         input_text = torch.tensor(dp.text_array, dtype=torch.long)
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        hidden_size = 128
-        embedding_dims = 256
-        num_layers = 1
-        vocab_size = dp.vocab_size
-        sent_model = PhoBERTSentiment(num_classes=4)
-        state_dict = torch.load("/Users/tieuanhnguyen/PycharmProjects/FinalThesis/models/sentiment/bert_best_acc_test.pth",
-                                        map_location=device)
-        sent_model.load_state_dict(state_dict)
-        output = sent_model(input_text)
-        dp.result = output
+        if dp.result == 1:
+            sent_model = PhoBERTSentiment(num_classes=4)
+            state_dict = torch.load("/Users/tieuanhnguyen/PycharmProjects/FinalThesis/models/sentiment/best_acc_sent_toxic.pth",
+                                            map_location=device)
+            sent_model.load_state_dict(state_dict)
+            output = sent_model(input_text)
+            dp.result = output + 1
         return dp
 
 

@@ -1,8 +1,8 @@
 from pipeline.component.pre import BPE
 from fairseq.data.encoders.fastbpe import fastBPE
-# from fairseq.models.roberta import RobertaModel
+from fairseq.models import roberta
 import torch.nn as nn
-from transformers import RobertaConfig, BertPreTrainedModel, RobertaModel
+from transformers import RobertaConfig, BertPreTrainedModel, AutoModel, RobertaModel
 import torch
 from fairseq.models.fairseq_encoder import FairseqEncoder
 
@@ -11,17 +11,18 @@ class PhoBERTSentiment(nn.Module):
     # Load the model in fairseq
     def __init__(self, num_classes):
         super().__init__()
-        pho_bert = RobertaModel.from_pretrained('/Users/tieuanhnguyen/PycharmProjects/FinalThesis/PhoBERT_base_fairseq',
-                                                checkpoint_file='model.pt')
+        # pho_bert = AutoModel.from_pretrained("vinai/phobert-base")
+        pho_bert = roberta.RobertaModel.from_pretrained("/Users/tieuanhnguyen/PycharmProjects/FinalThesis/PhoBERT_base_fairseq",
+                                                checkpoint_file="model.pt")
         args = BPE()
         pho_bert.bpe = fastBPE(args)
         pho_bert.register_classification_head("sentiment_analysis", num_classes=num_classes)
         self.base_model = pho_bert
-        self.softmax = nn.Softmax()
+        self.softmax = nn.Softmax(dim=1)
 
     def forward(self, x):
         outputs = self.base_model.predict("sentiment_analysis", x)
-        outputs = self.softmax(outputs)
+        outputs = self.softmax(outputs).argmax(dim=1)
         return outputs
 
 
@@ -32,7 +33,6 @@ class RobertaForToxicCmt(BertPreTrainedModel):
     def __init__(self, config):
         super().__init__(config)
         self.num_labels = config.num_labels
-        args = BPE()
         self.roberta = RobertaModel(config)
         self.qa_outputs = nn.Linear(4 * config.hidden_size, self.num_labels)
 

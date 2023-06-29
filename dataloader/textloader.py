@@ -1,5 +1,11 @@
 import numpy as np
-import tqdm
+from tqdm import tqdm
+from fairseq.data.encoders.fastbpe import fastBPE
+from fairseq.data import Dictionary
+
+
+class BPE:
+    bpe_codes = 'PhoBERT_base_transformers/bpe.codes'
 
 
 # Convert df to [N_samples, Max_sequence_length]
@@ -42,3 +48,13 @@ def from_text2array(text, vocab, bpe, max_sequence_length):
     return output
 
 
+def load_preprocessing_data(df):
+    args = BPE()
+    bpe = fastBPE(args)
+
+    # # Load the dictionary
+    vocab = Dictionary()
+    vocab.add_from_file("/Users/tieuanhnguyen/PycharmProjects/FinalThesis/PhoBERT_base_transformers/dict.txt")
+    x = from_csv2array(df, vocab, bpe, 50)
+    y = df.label_id.values.astype("int")
+    return x, y

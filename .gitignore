@@ -12,9 +12,9 @@ stop.sh
 /PhoBERT_base_fairseq/
 /PhoBERT_base_transformers/
 /synonyms_upsampling/vihsd/
-/synonyms_upsampling/vihsd/*.txt
-/synonyms_upsampling/vihsd/*.csv
+/synonyms_upsampling/vihsd/text_gen/
 /models/
 *.egg-info
 /cache/
+/crawler/text_crawler/
 .DS_Store
