@@ -3,3 +3,6 @@ pandas
 transformers
 fastBPE
 scikit-learn
+click
+matplotlib
+facebook-sdk

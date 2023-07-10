@@ -1,9 +1,9 @@
 import re
 import json
-from typing import Optional, List
+from typing import List
 import csv
 
-input_file_txt = '/Users/tieuanhnguyen/PycharmProjects/FinalThesis/synonyms_upsampling/text_samples/suicide_valid.txt'
+input_file_txt = '/Users/tieuanhnguyen/PycharmProjects/FinalThesis/synonyms_upsampling/text_samples/text_sample_toxic_cmt.txt'
 input_json = '/Users/tieuanhnguyen/PycharmProjects/FinalThesis/synonyms_upsampling/syn.json'
 
 
@@ -33,7 +33,7 @@ def gen_text(text: str) -> List[str | None]:
     f_json.close()
 
 
-output_file = "/Users/tieuanhnguyen/PycharmProjects/FinalThesis/synonyms_upsampling/text_gen/valid/valid_gen_suicide_label1.csv"
+output_file = "/Users/tieuanhnguyen/PycharmProjects/FinalThesis/synonyms_upsampling/text_gen/train/train_gen_toxic_label4.csv"
 fields = ['free_text', 'label_id']
 text_gens = []
 with open(input_file_txt, 'r') as f:
@@ -42,8 +42,9 @@ with open(input_file_txt, 'r') as f:
         try:
             texts_new = set(gen_text(text))
             for t in texts_new:
-                text_gens.append([t.replace("\n", "").replace("\r", "").strip('"'), 1])
+                text_gens.append([t.replace("\n", "").replace("\r", "").strip('"'), 4])
         except Exception as e:
+            print(e)
             print(text)
 f.close()
 

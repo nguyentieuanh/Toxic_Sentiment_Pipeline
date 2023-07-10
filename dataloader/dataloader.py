@@ -19,5 +19,4 @@ class ToxicCmtDataset(Dataset):
 def loader_dataset(df):
     x, y = load_preprocessing_data(df)
     dataset = ToxicCmtDataset(x, y)
-    dataloader = DataLoader(dataset=dataset, batch_size=64, shuffle=True)
-    return dataloader
+    return dataset

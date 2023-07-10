@@ -11,19 +11,19 @@ if __name__ == "__main__":
 
     downloader = YoutubeCommentDownloader()
     comments = downloader.get_comments_from_url(
-        'https://www.youtube.com/watch?v=0OWNZ8TYbkg',
+        'https://www.youtube.com/watch?v=e8-Ppbnts1I',
         sort_by=SORT_BY_POPULAR)
     fields = ['free_text', 'label_id']
     comment_texts = []
     for comment in comments:
-        text = comment['text']
+        text = comment['text'].replace("\r", " ").replace("\n", " ")
         check = re.search(r"@\S+", comment['text'])
         if check is not None:
             end = check.end()
             text = text[end:].strip()
         comment_texts.append([text, 0])
 
-    with open(os.path.join(output_text_f, "text_crawler_2906.csv"), "w+") as csvfile:
+    with open(os.path.join(output_text_f, "text_crawler_youtube_0907_2305.csv"), "w+") as csvfile:
         # creating a csv writer object
         csvwriter = csv.writer(csvfile)
 

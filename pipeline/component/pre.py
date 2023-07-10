@@ -6,7 +6,11 @@ from dataloader.textloader import from_text2array
 
 from fairseq.data.encoders.fastbpe import fastBPE
 from fairseq.data import Dictionary
+import warnings
+from transformers import logging
 
+logging.set_verbosity_error()
+warnings.filterwarnings("ignore")
 
 class BPE:
     bpe_codes = 'PhoBERT_base_transformers/bpe.codes'
@@ -15,7 +19,6 @@ class BPE:
 class LoadDataComponent(PreProcessComponent):
     def serve(self, text: str) -> Optional[DataPoint]:
         text = preprocessing(text)
-
         args = BPE()
         bpe = fastBPE(args)
 

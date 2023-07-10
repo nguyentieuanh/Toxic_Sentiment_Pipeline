@@ -28,7 +28,7 @@ class EarlyStopping:
         self.early_stop = False
         self.val_loss_min = np.Inf
         self.delta = delta
-        self.path = os.path.join(path, f"checkpoint.pth")
+        self.path = os.path.join(path, f"checkpoint_ver4.pth")
         self.trace_func = trace_func
 
     def __call__(self, val_loss, model):

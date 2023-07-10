@@ -48,3 +48,10 @@ class SentimentPipeline(BasePipeline):
             dp = c.serve(dp)
         dp = self.post_component.serve(dp)
         return dp
+
+    def analyze_bi_class(self, text: str):
+        dp = self.pre_component.serve(text)
+        for c in self.pipeline_component_list:
+            dp = c.serve(dp)
+            break
+        return dp

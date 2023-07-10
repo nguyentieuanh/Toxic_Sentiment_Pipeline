@@ -11,8 +11,6 @@ class BPE:
 # Convert df to [N_samples, Max_sequence_length]
 def from_csv2array(df, vocab, bpe, max_sequence_length):
     outputs = np.zeros((len(df), max_sequence_length))
-    # print(outputs[7124, :])
-    # print(len(df))
 
     cls_id = 0  # id of the beginning character
     eos_id = 2  # id for the ending character
@@ -54,7 +52,7 @@ def load_preprocessing_data(df):
 
     # # Load the dictionary
     vocab = Dictionary()
-    vocab.add_from_file("/Users/tieuanhnguyen/PycharmProjects/FinalThesis/PhoBERT_base_transformers/dict.txt")
+    vocab.add_from_file("PhoBERT_base_transformers/dict.txt")
     x = from_csv2array(df, vocab, bpe, 50)
     y = df.label_id.values.astype("int")
     return x, y
